@@ -71,7 +71,7 @@ public class RadioSt {
         if (currentVolume < maxVolume) {
             currentVolume++;
         } else {
-            currentVolume = minVolume;
+            currentVolume = maxVolume;
         }
     }
 
@@ -79,7 +79,7 @@ public class RadioSt {
         if (currentVolume > minVolume) {
             currentVolume--;
         } else {
-            currentVolume = maxVolume;
+            currentVolume = minVolume;
         }
     }
 
