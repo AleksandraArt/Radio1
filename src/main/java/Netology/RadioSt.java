@@ -37,7 +37,7 @@ public class RadioSt {
     public void setMinRadioStation(int minRadioStation) {
         this.minRadioStation = minRadioStation;
     }
-    
+
 
     public void setMaxRadioStation(int maxRadioStation) {
         this.maxRadioStation = maxRadioStation;
@@ -47,13 +47,13 @@ public class RadioSt {
         return currentRadioStation;
     }
 
-    public void increaseVolume() {
-        if (currentVolume < maxVolume) {
-            currentVolume++;
-        } else {
-            currentVolume = maxVolume;
-        }
-    }
+    //public void increaseVolume() {
+       // if (currentVolume < maxVolume) {
+        //    currentVolume++;
+       // } else {
+          //  currentVolume = maxVolume;
+      //  }
+   // }
 
     public void decreaseVolume() {
         if (currentVolume > minVolume) {

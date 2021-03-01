@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.*;
             RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
-            radioSt.setCurrentVolume(5);
-            radioSt.increaseVolume();
-            int expected = 6;
+            radioSt.setCurrentVolume(6);
+            radioSt.decreaseVolume();
+            int expected = 5;
 
             assertEquals(expected, radioSt.getCurrentVolume());
         }
@@ -23,9 +23,9 @@ import static org.junit.jupiter.api.Assertions.*;
             RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
-            radioSt.setCurrentVolume(0);
-            radioSt.increaseVolume();
-            int expected = 1;
+            radioSt.setCurrentVolume(1);
+            radioSt.decreaseVolume();
+            int expected = 0;
 
             assertEquals(expected, radioSt.getCurrentVolume());
         }
@@ -35,9 +35,9 @@ import static org.junit.jupiter.api.Assertions.*;
             RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
-            radioSt.setCurrentVolume(9);
-            radioSt.increaseVolume();
-            int expected = 10;
+            radioSt.setCurrentVolume(10);
+            radioSt.decreaseVolume();
+            int expected = 9;
 
             assertEquals(expected, radioSt.getCurrentVolume());
         }
