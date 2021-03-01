@@ -47,14 +47,6 @@ public class RadioSt {
         return currentRadioStation;
     }
 
-    //public void increaseVolume() {
-       // if (currentVolume < maxVolume) {
-        //    currentVolume++;
-       // } else {
-          //  currentVolume = maxVolume;
-      //  }
-   // }
-
     public void decreaseVolume() {
         if (currentVolume > minVolume) {
             currentVolume--;
