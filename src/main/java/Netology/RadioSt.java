@@ -7,18 +7,18 @@ public class RadioSt {
     private int minRadioStation;
     private int maxRadioStation;
     private int currentRadioStation;
-    private boolean on;
-    public int getMinVolume() {
-        return minVolume;
-    }
+
+    //public int getMinVolume() {
+        //return minVolume;
+    //}
 
     public void setMinVolume(int minVolume) {
         this.minVolume = minVolume;
     }
 
-    public int getMaxVolume() {
-        return maxVolume;
-    }
+    //public int getMaxVolume() {
+       // return maxVolume;
+    //}
 
     public void setMaxVolume(int maxVolume) {
         this.maxVolume = maxVolume;
@@ -39,17 +39,17 @@ public class RadioSt {
         }
         this.currentVolume = currentVolume;
     }
-    public int getMinRadioStation() {
-        return minRadioStation;
-    }
+    //public int getMinRadioStation() {
+      //  return minRadioStation;
+    //}
 
     public void setMinRadioStation(int minRadioStation) {
         this.minRadioStation = minRadioStation;
     }
 
-    public int getMaxRadioStation() {
-        return maxRadioStation;
-    }
+    //public int getMaxRadioStation() {
+      //  return maxRadioStation;
+   // }
 
     public void setMaxRadioStation(int maxRadioStation) {
         this.maxRadioStation = maxRadioStation;
@@ -57,14 +57,6 @@ public class RadioSt {
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
-    }
-
-    public boolean isOn() {
-        return on;
-    }
-
-    public void setOn(boolean on) {
-        this.on = on;
     }
 
     public void increaseVolume() {
