@@ -3,11 +3,7 @@
 
 name: Java CI with Maven
 
-on:
-  push:
-    branches: [ flexible ]
-  pull_request:
-    branches: [ flexible ]
+on: [push]
 
 jobs:
   build:
