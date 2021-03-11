@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void increaseVolume() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(6);
             radioSt.decreaseVolume();
@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void increaseVolumeMin() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(1);
             radioSt.decreaseVolume();
@@ -33,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void increaseVolumeMax() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(10);
             radioSt.decreaseVolume();
@@ -45,7 +45,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void decreaseVolumeMin() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(0);
             radioSt.decreaseVolume();
@@ -57,7 +57,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void decreaseVolumeMax() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(10);
             radioSt.decreaseVolume();
@@ -69,7 +69,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void decreaseVolume() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(5);
             radioSt.decreaseVolume();
@@ -81,7 +81,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void setCurrentVolume() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(5);
             int expected = 5;
@@ -92,7 +92,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void setCurrentVolumeMin() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(0);
             int expected = 0;
@@ -103,10 +103,10 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void setCurrentVolumeMax() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
-            radioSt.setCurrentVolume(10);
-            int expected = 10;
+            radioSt.setCurrentVolume(100);
+            int expected = 100;
 
             assertEquals(expected, radioSt.getCurrentVolume());
         }
@@ -114,7 +114,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void setCurrentVolumeUnder() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(-1);
             int expected = 0;
@@ -125,10 +125,10 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void setCurrentVolumeOver() {
             RadioSt radioSt = new RadioSt();
-            radioSt.setMaxVolume(10);
+            radioSt.setMaxVolume(100);
             radioSt.setMinVolume(0);
-            radioSt.setCurrentVolume(15);
-            int expected = 10;
+            radioSt.setCurrentVolume(150);
+            int expected = 100;
 
             assertEquals(expected, radioSt.getCurrentVolume());
         }
