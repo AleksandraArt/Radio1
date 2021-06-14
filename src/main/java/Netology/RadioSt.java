@@ -9,15 +9,6 @@ public class RadioSt {
     private int currentRadioStation;
 
 
-    public RadioSt(int minVolume, int maxVolume, int currentVolumeint,
-                   int minRadioStation, int maxRadioStation, int currentRadioStation) {
-        this.minVolume = minVolume;
-        this.minVolume = maxVolume;
-        this.minVolume = currentVolumeint;
-        this.minVolume = minRadioStation;
-        this.minVolume = maxRadioStation;
-        this.minVolume = currentRadioStation;
-    }
 
     public void setMinVolume(int minVolume) {
         this.minVolume = minVolume;

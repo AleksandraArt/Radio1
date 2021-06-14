@@ -8,8 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void increaseVolume() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(6);
@@ -21,8 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void increaseVolumeMin() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(1);
@@ -34,8 +32,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void increaseVolumeMax() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(10);
@@ -47,8 +44,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void decreaseVolumeMin() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(0);
@@ -60,8 +56,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void decreaseVolumeMax() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(10);
@@ -73,8 +68,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void decreaseVolume() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(5);
@@ -86,8 +80,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentVolume() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(5);
@@ -98,8 +91,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentVolumeMin() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(0);
@@ -110,8 +102,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentVolumeMax() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(10);
@@ -122,8 +113,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentVolumeUnder() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(-1);
@@ -134,8 +124,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentVolumeOver() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxVolume(10);
             radioSt.setMinVolume(0);
             radioSt.setCurrentVolume(15);
@@ -146,8 +135,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void nextRadioStation() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(6);
@@ -159,8 +147,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void prevRadioStation() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(6);
@@ -172,8 +159,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentRadioStation() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(6);
@@ -184,8 +170,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void nextRadioStationMax() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(0);
@@ -197,8 +182,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void prevRadioStationMin() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(9);
@@ -210,8 +194,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentRadioStationUnder() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(-1);
@@ -222,8 +205,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void setCurrentRadioStationOver() {
-            RadioSt radioSt = new RadioSt(10, 0, 6,
-                    1, 1, 1);
+            RadioSt radioSt = new RadioSt();
             radioSt.setMaxRadioStation(9);
             radioSt.setMinRadioStation(0);
             radioSt.setCurrentRadioStation(15);
